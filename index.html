@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Encryption app by Gerald Okafor</title>
+
+    <link rel="icon" href="img/favicon.ico">
+
+    <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css" />
+    <link rel="stylesheet" href="assets/foundation/css/foundation.min.css" />
+    <link rel="stylesheet" href="assets/foundation/css/foundation.css" />
+    <link rel="stylesheet" href="assets/foundation/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/dist/sweetalert.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="assets/modernizr/modernizr.js"></script>
+    <script src="assets/modernizr/modernizr.custom.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="large-12 columns">
+                <h1>ENCRYPTION WITHOUT STRESS</h1>
+            </div>
+        </div>
+    </div>
+    <div class="color">
+        <div class="row">
+            <div class="large-12 columns">
+                <h3>You can encrypt a word by using an integer(number) from 0-26 as the key</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-12 medium-12 columns">
+                <h5>CIPHER BY CHOICE:</h5>
+                <br>
+
+                <div class="row">
+
+                    <!-- word input -->
+                    <div class="large-6 medium-6 columns">
+                        <div class="callout panel">
+                            <p><strong>Enter text here.</strong></p>
+                                <textarea id="text" cols="10" rows="1" style="width:30em; height:5em">THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG.</textarea>
+                        </div>
+                    </div>
+
+                    <!-- key input -->
+                    <div class="large-6 medium-6 columns">
+                            <p><strong>Enter encryption key here.</strong></p>
+                            <div class="small-9 columns">
+                                <input type="text" id="shift" value="13" style="width:10em;" />
+                            </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <!-- Submit button -->
+                    <div id="encrypt" class="large-12 medium-12 columns" style="text-align: center;">
+                        <input class="small button one" type="button" value="Encrypt" onclick="doCrypt(false);" />
+                        <input class="small button two" type="button" value="Decrypt" onclick="doCrypt(true);" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <hr>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="row">
+                <div class="large-12 medium-12 columns">
+                    <p>&copy;
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+
+                        </script>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="assets/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+    <script>
+        $(document).foundation();
+
+    </script>
+</body>
+
+</html>
